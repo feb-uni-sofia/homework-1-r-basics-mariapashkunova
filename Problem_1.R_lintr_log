@@ -1,0 +1,76 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> lintr::lint("Problem_1.R")
+Problem_1.R:2:2: style: Put spaces around all infix operators.
+x<-c(4,1,1,4) 
+~^~~
+Problem_1.R:2:8: style: Commas should always have a space after.
+x<-c(4,1,1,4) 
+       ^
+Problem_1.R:2:10: style: Commas should always have a space after.
+x<-c(4,1,1,4) 
+         ^
+Problem_1.R:2:12: style: Commas should always have a space after.
+x<-c(4,1,1,4) 
+           ^
+Problem_1.R:2:14: style: Trailing whitespace is superfluous.
+x<-c(4,1,1,4) 
+             ^
+Problem_1.R:5:2: style: Put spaces around all infix operators.
+y<-c(1,4)
+~^~~
+Problem_1.R:5:8: style: Commas should always have a space after.
+y<-c(1,4)
+       ^
+Problem_1.R:8:1: style: lines should not be more than 80 characters.
+Difference <- x - y # prints out : 3 -3 0 0. Basic vector subtraction -> each number in the first vector is reduced by its corresponding number in the second vector: 4,1 - 1,4 giving us 3,-3 and then 1,4 - 1,4 giving us 0,0.
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_1.R:11:2: style: Put spaces around all infix operators.
+s<- c(x,y)
+~^
+Problem_1.R:11:9: style: Commas should always have a space after.
+s<- c(x,y)
+        ^
+Problem_1.R:14:7: style: Commas should always have a space after.
+rep(s,10)
+      ^
+Problem_1.R:15:14: style: Commas should always have a space after.
+length(rep(s,10))
+             ^
+Problem_1.R:18:7: style: Commas should always have a space after.
+rep(s,each = 3)
+      ^
+Problem_1.R:22:14: style: Put spaces around all infix operators.
+seq(7, 21, by=1)
+            ~^~
+Problem_1.R:29:1: style: Trailing blank lines are superfluous.
+
+^
+Problem_1.R:30:1: style: Trailing blank lines are superfluous.
+
+^
+Problem_1.R:31:1: style: Trailing blank lines are superfluous.
+
+^
+Problem_1.R:32:1: style: Trailing blank lines are superfluous.
+
+^
+> 
+> 
